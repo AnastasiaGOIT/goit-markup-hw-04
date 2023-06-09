@@ -3,8 +3,7 @@
   --text-color: #434455;
   --background-color: #ffffff;
   --logo-accent-color: #4d5ae5;
-  --transition-shadow: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-color: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+--transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 * {
   box-sizing: border-box;
@@ -156,7 +155,7 @@ img {
   color: var(--main-color);
   padding-top: 24px;
   padding-bottom: 24px;
-  transition: var(--transition-color);
+  transition: var(--transition);
 }
 .header-menu-link:hover {
   color: #404bbf;
@@ -243,7 +242,7 @@ img {
   border-radius: 4px;
   margin-top: 48px;
   border-color: #4d5ae5;
-  transition: var(--transition-color);
+  transition: var(--transition);
 }
 
 .hero-btn:hover {
@@ -508,7 +507,7 @@ margin-left: 156px;
   background-color: rgba(46, 47, 66, 0.4);
   position: fixed;
   top: 0;
-  transition: opacity 300ms linear, visibility 300ms linear;
+  transition: var(--transition);
 }
 .backdrop.is-hidden .modal { transform: translate(-50%, -50%) scale(0);
 }
@@ -523,7 +522,7 @@ margin-left: 156px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform var(--transition);
 }
 .modal-bnt {
   width: 24px;
@@ -632,7 +631,7 @@ margin-left: 156px;
   margin-bottom: 72px;
 }
 .gallery-item {
-  transition: var(--transition-color);
+  transition: var(--transition);
 }
 .gallery-item:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -684,7 +683,7 @@ margin-left: 156px;
 }
 .gallery-img-item {
   width: calc((100% - 48px) / 3);
-  transition: var(--transition-shadow);
+  transition: var(--transition);
 }
 .gallery-img-link {
 }
@@ -727,11 +726,11 @@ margin-left: 156px;
 }
 .gallery-cover-div:hover .gallery-cover-block {
   transform: translate(0);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform var(--transition);
 }
 .gallery-cover-div:focus .gallery-cover-block {
   transform: translate(0);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform var(--transition);
 }
 .gallery-cover-text {
   font-weight: 400;
