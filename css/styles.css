@@ -3,10 +3,10 @@
   --text-color: #434455;
   --background-color: #ffffff;
   --logo-accent-color: #4d5ae5;
-  --transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-color: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-background: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-border: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-shadow: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 * {
   box-sizing: border-box;
@@ -160,7 +160,7 @@ img {
   color: var(--main-color);
   padding-top: 24px;
   padding-bottom: 24px;
-  transition: var(--transition);
+  transition: var(--transition-color);
 }
 .header-menu-link:hover {
   color: #404bbf;
@@ -174,7 +174,7 @@ img {
   display: flex;
   gap: 40px;
 }
-.header-adress-link {
+.header-address-link {
   display: flex;
 }
 .header-address-list .list {
@@ -184,6 +184,7 @@ img {
   line-height: 24px;
   letter-spacing: 0.02em;
   color: var(--text-color);
+  transition: var(--transition-color);
 }
 .header-address-contact-mail:hover {
   color: #404bbf;
@@ -207,7 +208,7 @@ img {
   padding-bottom: 188px;
   background-image: linear-gradient(
       to bottom,
-      rgba(46, 47, 66, 0),
+      rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/cover.jpg);
@@ -215,6 +216,7 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .hero-title {
   font-weight: 700;
   font-size: 56px;
@@ -247,7 +249,7 @@ img {
   border-radius: 4px;
   margin-top: 48px;
   border-color: #4d5ae5;
-  transition: var(--transition);
+  transition: var(--transition-background);
 }
 
 .hero-btn:hover {
@@ -362,7 +364,7 @@ img {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
-  transition: var(--transition);
+  transition: var(--transition-shadow);
 }
 .team-container-subtitle {
   padding: 32px 16px;
@@ -507,7 +509,7 @@ img {
   background-color: rgba(46, 47, 66, 0.4);
   position: fixed;
   top: 0;
-  transition: var(--transition);
+  transition: var(--transition-border);
 }
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0);
@@ -523,7 +525,7 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  transition: transform var(--transition);
+  transition: transform var(--transition-border);
 }
 .modal-bnt {
   width: 24px;
@@ -632,7 +634,7 @@ img {
   margin-bottom: 72px;
 }
 .gallery-item {
-  transition: var(--transition);
+  transition: var(--transition-shadow);
 }
 .gallery-item:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -684,7 +686,7 @@ img {
 }
 .gallery-img-item {
   width: calc((100% - 48px) / 3);
-  transition: var(--transition);
+  transition: var(--transition-shadow);
 }
 .gallery-img-link {
 }
@@ -724,14 +726,13 @@ img {
   padding: 40px 32px;
   height: 100%;
   transform: translateY(100%);
+  transition: transform var(--transition-background);
 }
 .gallery-cover-div:hover .gallery-cover-block {
   transform: translate(0);
-  transition: transform var(--transition);
 }
 .gallery-cover-div:focus .gallery-cover-block {
   transform: translate(0);
-  transition: transform var(--transition);
 }
 .gallery-cover-text {
   font-weight: 400;
