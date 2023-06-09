@@ -140,6 +140,7 @@ img {
 }
 .current {
   position: relative;
+  color: #404bbf;
 }
 .current::after {
   content: "";
@@ -151,6 +152,7 @@ img {
   top: 68px;
   background: #404bbf;
   border-radius: 2px;
+  bottom: -1px;
 }
 .header-menu-link {
   font-weight: 500;
@@ -201,8 +203,6 @@ img {
 /*---------Hero-----------*/
 
 .hero {
-}
-.hero-container {
   max-width: 1440px;
   padding-top: 188px;
   padding-bottom: 188px;
@@ -215,6 +215,8 @@ img {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+.hero-container {
 }
 
 .hero-title {
@@ -377,7 +379,8 @@ img {
 .team-text {
   text-align: center;
 }
-.team-icon-conteiner {
+.team-icon-container {
+  padding: 32px 0;
 }
 .team-icon-list {
   display: flex;
@@ -443,10 +446,11 @@ img {
   display: flex;
   gap: 120px;
   margin-left: 156px;
+  align-items: baseline;
 }
 .footer-container {
   width: 264px;
-  margin: 0;
+  margin-right: 120px;
   background: #2e2f42;
 }
 
@@ -475,8 +479,10 @@ img {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.02em;
-  color: #f4f4fd;
+  color: #ffffff;
   width: 264px;
+  font-weight: 500;
+  margin-bottom: 16px;
 }
 .footer-icon-container {
   width: 208px;
@@ -486,22 +492,35 @@ img {
 .footer-icon-list {
   display: flex;
   gap: 16px;
-  padding-top: 16px;
 }
 .list {
 }
 .footer-icon-item {
   width: 40px;
   height: 40px;
-  background: #4d5ae5;
-  border-radius: 50%;
   position: relative;
 }
-.footer-icon {
+.footer-icon-link {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.footer-icon-link:hover {
+  background-color: #31d0aa;
+}
+.footer-icon-link:focus {
+  background-color: #31d0aa;
+}
+.footer-icon {
+  fill: #f4f4fd;
 }
 .backdrop {
   width: 100%;
