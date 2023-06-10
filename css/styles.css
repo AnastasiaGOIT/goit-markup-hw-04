@@ -126,7 +126,7 @@ img {
   font-weight: 800;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  color: var(--logo-accent-color);
+  color: #404bbf;
   text-transform: uppercase;
   margin-right: 76px;
 }
@@ -512,6 +512,7 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-icon-link:hover {
   background-color: #31d0aa;
@@ -569,10 +570,12 @@ img {
 .modal-bnt:hover {
   background-color: #404bbf;
   border: none;
+  fill: #ffffff;
 }
 .modal-bnt:focus {
   background-color: #404bbf;
   border: none;
+  fill: #ffffff;
 }
 .icon-close {
   position: absolute;
@@ -580,12 +583,6 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.icon-close:hover {
-  fill: #ffffff;
-}
-.icon-close:focus {
-  fill: #ffffff;
 }
 .is-hidden {
   visibility: hidden;
