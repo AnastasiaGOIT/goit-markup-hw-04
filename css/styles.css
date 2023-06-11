@@ -138,22 +138,6 @@ img {
 
 .header-menu-list {
 }
-.current {
-  position: relative;
-  color: #404bbf;
-}
-.current::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 4px;
-  left: 0;
-  bottom: 0;
-  top: 68px;
-  background: #404bbf;
-  border-radius: 2px;
-  bottom: -1px;
-}
 
 .header-menu-link {
   font-weight: 500;
@@ -170,6 +154,22 @@ img {
 }
 .header-menu-link:focus {
   color: #404bbf;
+}
+.current {
+  position: relative;
+  color: #404bbf;
+}
+.current::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  left: 0;
+  bottom: 0;
+  top: 68px;
+  background: #404bbf;
+  border-radius: 2px;
+  bottom: -1px;
 }
 .header-address {
 }
