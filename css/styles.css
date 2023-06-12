@@ -469,14 +469,14 @@ img {
   border-color: #404bbf;
 }
 .customers-logo-link:hover .customers-logo {
-  fill: #404bbf;
+  color: #404bbf;
 }
 
 .customers-logo-link:focus {
   border-color: #404bbf;
 }
 .customers-logo-link:focus .customers-logo {
-  fill: #404bbf;
+  color: #404bbf;
 }
 /*--------footer-----------*/
 .footer-container-main {
@@ -513,7 +513,7 @@ img {
 }
 .footer-text {
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
   width: 264px;
@@ -523,6 +523,8 @@ img {
   font-weight: 500;
   margin-bottom: 16px;
   color: #ffffff;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 .footer-icon-container {
   width: 208px;
