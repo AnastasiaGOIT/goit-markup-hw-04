@@ -467,9 +467,12 @@ img {
 }
 .customers-logo-link:hover {
   border-color: #404bbf;
+  color: #404bbf;
 }
+
 .customers-logo-link:focus {
   border-color: #404bbf;
+  color: #404bbf;
 }
 /*--------footer-----------*/
 .footer-container-main {
