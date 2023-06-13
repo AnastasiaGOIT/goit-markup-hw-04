@@ -468,15 +468,8 @@ img {
 .customers-logo-link:hover {
   border-color: #404bbf;
 }
-.customers-logo-link:hover .customers-logo {
-  color: #404bbf;
-}
-
 .customers-logo-link:focus {
   border-color: #404bbf;
-}
-.customers-logo-link:focus .customers-logo {
-  color: #404bbf;
 }
 /*--------footer-----------*/
 .footer-container-main {
